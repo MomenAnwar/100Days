@@ -1,0 +1,49 @@
+
+.container {
+    margin: 50px auto;
+    width: 400px;
+    aspect-ratio: 1;
+    background-color: blue;
+    padding: 100px;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.number {
+    display: flex;
+}
+.one {
+    border-right: 40px solid white;
+    margin-left: 60px;
+    position: relative;
+    border-radius: 5px;
+}
+.one::before {
+    content: "";
+    border-radius: 5px;
+    width: 50px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: -45px;
+    background-color: white;
+    transform-origin: top right;
+    transform: rotate(-30deg);
+}
+.zero {
+    border-radius: 50%;
+    border: 30px solid white;
+    width: 80px;
+    height: 80px;
+}
+.first {
+    transform: translateX(-10px);
+}
+.second {
+    transform: translateX(-30px);
+}
+.days {
+    font-size: 110px;
+}
