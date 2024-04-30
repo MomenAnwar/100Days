@@ -31,7 +31,8 @@ span {
     transform: rotate(45deg);
 }
 .parent:active .two {
-    height: 0;
+    visibility: hidden;
+    position: absolute;
 }
 .parent:active {
     gap: 0;
