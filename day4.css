@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    place-items: center;
+    background-color: rgb(237, 65, 65);
+    border-radius: 5px;
+    width: 300px;
+    height: 300px;
+}
+span {
+    background-color: white;
+    position: absolute;
+    box-shadow: 0 0 5px gray;
+    border-radius: 50%;
+    transform: scale(0%);
+}
+.one {
+    width: 150px;
+    height: 150px;
+    animation: scale1 4s linear 0s infinite ;
+}
+.two {
+    width: 100px;
+    height: 100px;
+    animation: scale2 4s linear 1s infinite;
+}
+.three {
+    width: 50px;
+    height: 50px;
+    animation: scale3 4s linear 2s infinite; 
+}
+@keyframes scale1 {
+    0%{
+        transform: scale(0%);
+    }
+    25%{
+        transform: scale(100%);
+    }
+    75%{
+        transform: scale(100%);
+    }
+    90%{
+        transform: scale(0%);
+    }
+}
+@keyframes scale2 {
+    0%{
+        transform: scale(0%);
+    }
+    25%{
+        transform: scale(100%);
+    }
+    50%{
+        transform: scale(100%);
+    }
+    60%{
+        transform: scale(0%);
+    }
+}
+@keyframes scale3 {
+    0%{
+        transform: scale(0%);
+    }
+    12.5%{
+        transform: scale(100%);
+    }
+    25%{
+        transform: scale(100%);
+    }
+    30%{
+        transform: scale(0%);
+    }
+}
+
