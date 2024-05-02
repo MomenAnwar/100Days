@@ -1,0 +1,77 @@
+.info,
+.data,
+.parameters,
+.days {
+    padding: 15px 10px;
+}
+.container {
+    font-size: small;
+    width: 600px;
+    height: 600px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    text-transform: capitalize;
+    display: grid;
+    place-items: center;
+}
+.info {
+    background-color: rgb(213, 157, 52);
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+}
+span {
+    width: 120px;
+}
+.top-left,
+.days {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.bottom-right {
+    font-size: larger;
+}
+.top-right,
+.bottom-right {
+    text-align: end;
+}
+.parent {
+    background-color: white;
+}
+.parameters {
+    display: flex;
+    justify-content: end;
+    gap: 40px;
+}
+.parameters div {
+    position: relative;
+}
+.purchases::before,
+.views::before {
+    content: "";
+    width: 25px;
+    height: 3px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: -30px;
+}
+.purchases::before {
+    background-color: blue;
+}
+.views::before {
+    background-color: red;
+}
+.data {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.data div {
+    background-color: rgb(207, 206, 206);
+    height: 2px;
+}
+.days {
+    word-spacing: 6.5px;
+}
