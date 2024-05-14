@@ -1,0 +1,157 @@
+.parent {
+    width: 500px;
+    aspect-ratio: 1;
+    background-color: rgb(23, 23, 28);
+    border: 1px solid black;
+}
+.animated {
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.moon {
+    position: absolute;
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 176);
+    top: 300px;
+    left: 40px;
+    box-shadow: 0 0 10px 2px rgb(237, 237, 63);
+    animation: moon 1s linear 0s forwards;
+}
+.cloud {
+    width: 400px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: rgb(44, 63, 73);
+    position: absolute;
+}
+.first {
+    left: -150px;
+    bottom: -250px;
+    opacity: 0.5;
+}
+.second {
+    left: 235px;
+    bottom: -250px;
+    opacity: 0.5;
+}
+.third {
+    left: -20px;
+    bottom: -275px;
+}
+.fourth {
+    left: 310px;
+    bottom: -300px;
+}
+.rain {
+    background-color: blue;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 8px;
+    transform: skewy(-45deg);
+    top: -15px;
+    animation: rain 1s linear 0s infinite;
+}
+.one {
+    left: 10px;
+}
+.two {
+    left: 490px;
+}
+.three {
+    left: 40px;
+    opacity: 0.5;
+    animation-duration: 1.5s;
+    animation-delay: 0.3s;
+}
+.four {
+    left: 420px;
+    animation-delay: 1s;
+}
+.five {
+    left: 70px;
+    animation-delay: 0.3s;
+}
+.six {
+    left: 100px;
+    animation-delay: 0.6s;
+}
+.seven {
+    left: 120px;
+    opacity: 0.5;
+    animation-duration: 1.5s;
+}
+.eight {
+    left: 160px;
+    animation-delay: 1.3s;
+}
+.nine {
+    left: 180px;
+    animation-delay: 0.7s;
+}
+.ten {
+    left: 210px;
+    opacity: 0.5;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+}
+.eleven {
+    left: 250px;
+    animation-delay: 0.9s;
+}
+.twelve {
+    left: 300px;
+    opacity: 0.5;
+    animation-duration: 1.2s;
+}
+.therteen {
+    left: 370px;
+    animation-delay: 0.1s;
+}
+.fourteen {
+    left: 450px;
+    opacity: 0.5;
+    animation-duration: 1.5s;
+    animation-delay: 0.7s;
+}
+.fifteen {
+    left: 500px;
+    animation-delay: 0.5s;
+}
+@keyframes rain {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-70px, 400px);
+    }
+}
+@keyframes moon {
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0, -250px);
+    }
+}
+.info {
+    display: flex;
+    background-color: white;
+    height: 20%;
+}
+.info div {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+span {
+    font-size: 80px;
+    padding: 10px;
+}
+.wind {
+    margin-right: 150px;
+}
