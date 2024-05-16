@@ -1,0 +1,108 @@
+.circle {
+    aspect-ratio: 1;
+    border-radius: 50%;
+}
+.parent {
+    margin: 100px auto;
+    width: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    border: 10px solid gray;
+    position: relative;
+}
+.father1, .father2 {
+    position: relative;
+    place-items: center;
+    overflow: hidden;
+    height: 100%;
+    width: 50%; 
+    display: grid;
+}
+.son1, .son2 {
+    width: 250px;
+    position: absolute;
+    top: 150px;
+}
+.son1 {
+    transform: translate(-30%, -50%) rotate(45deg);
+    border: 5px solid red;
+    border-top-color: black;
+    border-right-color: black;
+    animation: spin1 5s linear 0s infinite;
+}
+.son2 {
+    transform: translate(30%, -50%) rotate(45deg);
+    border: 5px solid red;
+    border-bottom-color: black;
+    border-left-color: black;
+    animation: spin2 5s linear 1.25s infinite;
+}
+.time, .dots {
+    position: absolute;
+    align-self: center;
+    color: white;
+}
+.dots {
+    width: 200px;
+    left: 50px;
+    display: flex;
+    gap: 5px;
+    overflow: hidden;
+}
+.dot {
+    background-color: white;
+    width: 1px;
+}
+.time {
+    background-color: black;
+    width: 198px;
+    left: 50.5px;
+    top: 51px;
+    display: grid;
+    place-content: center;
+}
+p {
+    margin: 0;
+}
+span {
+    font-size: 50px;
+}
+i {
+    color: red;
+    margin-right: 5px;
+}
+@keyframes spin1 {
+    0%{
+        transform:translate(-30%, -50%) rotate(45deg);
+    }
+    25%{
+        transform:translate(-30%, -50%) rotate(225deg);
+    }
+    50%{
+        transform:translate(-30%, -50%) rotate(225deg);
+    }
+    75%{
+        transform:translate(-30%, -50%) rotate(405deg);
+    }
+    100%{
+        transform:translate(-30%, -50%) rotate(405deg);
+    }
+}
+@keyframes spin2 {
+    0%{
+        transform:translate(30%, -50%) rotate(45deg);
+    }
+    25%{
+        transform:translate(30%, -50%) rotate(225deg);
+    }
+    50%{
+        transform:translate(30%, -50%) rotate(225deg);
+    }
+    75%{
+        transform:translate(30%, -50%) rotate(405deg);
+    }
+    100%{
+        transform:translate(30%, -50%) rotate(405deg);
+    }
+}
